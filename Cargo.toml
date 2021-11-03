@@ -6,9 +6,7 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libmdns = "0.6.2"
-env_logger =  { version = "0.9", default-features = false, features = ["termcolor","humantime","atty"] }
+libmdns = { path = "../libmdns"}
 rxrust = "0.15.0"
-
-[dependencies.mdns]
-git = "https://github.com/plietar/rust-mdns"
+log = "0.4"
+env_logger =  { version = "0.9", default-features = false, features = ["termcolor","humantime","atty"] }
